@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Inter;
+  src: url(../src/assets/fonts/Inter.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #352d6b;
+  font-family: Inter;
+  font-size: 62.5%;
+  background-image: url(./assets/img/bg.svg);
+  background-size: cover;
+}
+
+button,
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 2rem;
+  font-weight: 100;
+  background-color: #d66853;
+  cursor: pointer;
+  transition: 0.2s all ease;
+  color: #d3e2df;
+}
+
+input:focus-within {
+  background-color: #99d5c9;
+  color: black;
+  outline: none;
+  box-shadow: 0px 0px 400px #99d5c9;
+}
+
+button:hover {
+  border-color: #ffffff4d;
+  box-shadow: 0px 0px 400px #d6695350;
+  transition: 0.2s all ease;
+  background-color: #e57660;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.money-amount {
+  color: white;
+  font-size: 5rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-inside {
+  display: flex;
+  max-width: 900px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+  border-radius: 2rem;
+  /* background-color: rgba(0, 0, 0, 0.268);
+  backdrop-filter: blur(10px) brightness(1.2) saturate(1.1);
+  border: 1rem solid rgba(253, 253, 253, 0.477); */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+input[type="number"] {
+  max-width: 195px;
+  padding: 20px;
+  font-size: 3.5rem;
+  -moz-appearance: textfield;
+  text-align: center;
+  box-shadow: 0px 0px 400px #d6695350, 10px 30px 100px #d4857550;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.standard-p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: rgba(255, 255, 255, 0.389);
+  font-size: 2rem;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.389);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.389);
+  font-size: 2rem;
+}
